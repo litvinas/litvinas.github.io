@@ -2,6 +2,9 @@ body, html {
   margin: 0;
   padding: 0;
   background-color: #000000;
+
+  color: #FFFFFF;
+  z-index: 2;
 }
 
 video {
@@ -14,7 +17,7 @@ video {
   z-index: 1;
 }
 
-.text {
+.header_text {
   font-family: 'Lato', sans-serif;
   font-size: 1em;
   color: #FFFFFF;
@@ -35,6 +38,7 @@ video {
   right: 0;
 */}
 
+
 a {
   color : #FFFFFF;
   background: rgba(255,255,255,0.1);
@@ -44,4 +48,8 @@ a {
 a:hover {
   color: #000000;
   background: rgba(255, 255, 255, 0.9);
+}
+
+.container {
+  height: 100%;
 }
