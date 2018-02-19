@@ -1,6 +1,7 @@
 body, html {
   margin: 0;
   padding: 0;
+  background-color: #000000;
 }
 
 video {
@@ -15,6 +16,7 @@ video {
 
 .text {
   font-family: 'Lato', sans-serif;
+  font-size: 1em;
   color: #FFFFFF;
   z-index: 2;
   position: absolute; /* absolute */
@@ -22,6 +24,7 @@ video {
   left: 50%;
   transform: translate(-50%, -50%);
   min-width: 5%;
+  max-width: 30%;
  /* min-height: 2%;
 */
   text-align: center;
