@@ -2,43 +2,144 @@ body, html {
   margin: 0;
   padding: 0;
   background-color: #000000;
-
   color: #FFFFFF;
   z-index: 2;
+  overflow-x: hidden; 
+}
+.video_container {
+    position:absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
 }
 
-video {
+.video_container video {
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  min-width: 100%;
-  min-height: 100%;
-  z-index: 1;
 }
 
 .header_text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   font-family: 'Lato', sans-serif;
   font-size: 1em;
   color: #FFFFFF;
   z-index: 2;
-  position: absolute; /* absolute */
+  text-align: center;
+  min-width: 20%;
+  min-width: 50%;
+}
+.content {
+  color: #FFFFFF;
+  position: absolute;
+  top: 100%;
+  margin: 0;
+
+}
+
+.image {
+  display: inline-block;
+  float: left;
+  width: 50vw;
+  height: auto;
+
+/*  user-drag: none; 
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  opacity: 1;
+   transition: opacity .25s ease-in-out;
+   -moz-transition: opacity .25s ease-in-out;
+   -webkit-transition: opacity .25s ease-in-out;
+*/
+}
+
+.container {
+  position: relative;
+  float: left;
+  width: 50vw;
+
+}
+
+.box-content {
+  position: relative;
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+
+}
+
+.box-content .box-content-overlay {
+  background: rgba(0,0,0,0.4);
+
+
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+
+
+}
+
+.box-content:hover .box-content-overlay{
+  opacity: 1;
+
+}
+
+.content-text {
+  position: absolute;
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 100%;
+  top: 55%;
+  left: 50%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.box-content:hover .content-text{
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  min-width: 5%;
-  max-width: 30%;
- /* min-height: 2%;
-*/
-  text-align: center;
+  opacity: 1;
+    pointer-events: none;
 
-   /* top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-*/}
+}
 
+.content-text h1 {
+  color: white;
+  font-weight: 300;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  }
 
+.content a {
+}
 a {
   color : #FFFFFF;
   background: rgba(255,255,255,0.1);
@@ -50,6 +151,7 @@ a:hover {
   background: rgba(255, 255, 255, 0.9);
 }
 
-.container {
-  height: 100%;
+/* so it doesn't show the play button for bg video for ios */
+video::-webkit-media-controls {
+    display:none !important;
 }
