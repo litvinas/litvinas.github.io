@@ -26,6 +26,19 @@ body, html {
   transform: translate(-50%, -50%);
 }
 
+.video_container img {
+ min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+ 
+}
+
 .header_text {
   position: absolute;
   top: 50%;
@@ -39,7 +52,16 @@ body, html {
   text-align: center;
   min-width: 20%;
   min-width: 50%;
+    text-transform: uppercase;
+
 }
+.header_text bold {
+  font-weight: 700;
+  font-size: 2em;
+}
+
+
+
 .content {
   color: #FFFFFF;
   position: absolute;
