@@ -1,3 +1,7 @@
+/*
+- responsive text is too big on thumbnails
+- need a hovering alternative for smartphones
+*/
 body {
   font-size: 1.5em;
   overflow-x: hidden; /* doesn't work on smartphones in the html/body tag, needs a wrapper*/
