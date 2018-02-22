@@ -222,6 +222,7 @@ video::-webkit-media-controls {
     background: white;
 }
 
+
   br {
         line-height: 125%;
      }
@@ -299,4 +300,35 @@ video::-webkit-media-controls {
 
 .work_box_full {
    /*   border: 3px solid red; */
+}
+
+.about_me_links {
+  position: absolute;
+  right:3%;
+  top: 3%;
+  z-index: 2;
+    font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 1em;
+  color: #FFFFFF;
+  letter-spacing: 8px;
+  text-align: right;
+}
+.about_me_links a {
+font-weight: 200;
+font-size: 1.2em;
+}
+
+.email {
+  text-indent: 12px;
+  font-weight: 200;
+  text-transform: lowercase;
+  color: #ffffff; 
+  background: rgba(255,255,255,0.1);
+  letter-spacing: 4px;
+  line-height: 4;
+}
+
+.about_text_desc a {
+  font-weight: 200;
 }
