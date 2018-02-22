@@ -52,12 +52,35 @@ body, html {
   text-align: center;
   min-width: 20%;
   min-width: 50%;
-    text-transform: uppercase;
-
+/*    text-transform: uppercase; */
 }
-.header_text bold {
-  font-weight: 700;
-  font-size: 2em;
+
+.about_text {
+    position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 0.9em;
+  color: #FFFFFF;
+  z-index: 2;
+  text-align: left;
+  min-width: 20%;
+  min-width: 50%;
+  letter-spacing: 1px;
+  color: #6e6767;
+  line-height: 150%;
+/*    text-transform: uppercase; */
+}
+
+.about_text_title {
+  color: #FFFFFF;
+  letter-spacing: 5px;
+}
+.about_text_desc {
+  font-weight:200;
+  color: #e5dede;
 }
 
 
@@ -178,3 +201,17 @@ a:hover {
 video::-webkit-media-controls {
     display:none !important;
 }
+
+::-moz-selection { /* Code for Firefox */
+    color: white;
+    background: black;
+}
+
+::selection {
+    color: black; 
+    background: white;
+}
+
+  br {
+        line-height: 125%;
+     }
