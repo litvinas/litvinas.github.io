@@ -56,17 +56,16 @@ body, html {
 }
 
 .about_text {
-    position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+    position: relative;
+  margin-top: 10%;
+  margin-left: 25%;
+  margin-right: 25%;
   font-family: 'Lato', sans-serif;
   font-weight: 300;
   font-size: 0.9em;
   color: #FFFFFF;
   z-index: 2;
   text-align: left;
-  min-width: 20%;
   min-width: 50%;
   letter-spacing: 1px;
   color: #6e6767;
