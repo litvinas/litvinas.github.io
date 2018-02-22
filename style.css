@@ -332,3 +332,20 @@ font-size: 1.2em;
 .about_text_desc a {
   font-weight: 200;
 }
+
+
+.item:after{
+    content:'//contact';
+    font-weight: 200;
+    font-size: 1.2em;
+      background: rgba(255,255,255,0.1);
+
+
+}
+.item:hover:after{
+    content:' jonas@litvinas.com';
+    letter-spacing: 2px;
+    font-weight: 200;
+    background: rgba(255,255,255,0.2);
+
+}
