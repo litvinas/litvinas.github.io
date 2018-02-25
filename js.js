@@ -1,7 +1,7 @@
-$('#up, #down').on('click', function(e){
-    e.preventDefault();
-    var target= $(this).get(0).id == 'up' ? $('#down') : $('#up');
-    $('html, body').stop().animate({
-       scrollTop: target.offset().top
-    }, 1000);
+$(document).on('click', 'a[href^="#work"]', function (event) {
+    event.preventDefault();
+
+    $('html, body').animate({
+        scrollTop: $($.attr(this, 'href')).offset().top
+    }, 500);
 });

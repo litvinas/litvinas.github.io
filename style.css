@@ -159,7 +159,9 @@ body, html {
   position: relative;
   float: left;
   width: 50vw;
-
+}
+.container.last {
+  width: 100vw;
 }
 .container a {
     margin: 0px;
@@ -366,7 +368,17 @@ font-size: 1.2em;
   font-weight: 200;
 }
 
-
+.footer {
+  position: relative;
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  font-size: 1.25em;
+}
+.footer a {
+  letter-spacing: 2px;
+  font-weight: 300;
+}
 .item:after{
     content:'//contact';
     font-weight: 200;

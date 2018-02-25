@@ -8,9 +8,36 @@
   <link href="https://fonts.googleapis.com/css?family=Lato:300,700|Montserrat:300" rel="stylesheet">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
 
 
-  </head>
+</head>
 <body>
 <section id="main">  
 <div class="video_container">
@@ -19,14 +46,33 @@
     <source src="content/bg.webm" type="video/webm">
   </video>
 </div>
-  <div class="header_text">HELLO. I'M <a href="me">JONAS LITVINAS</a>. I DO <a href="#work">VISUALS.</a></div>
+  <div class="header_text">HELLO. I'M <a href="me">JONAS LITVINAS</a>. I DO <a href="#work">VISUALS.</a>
+
+</div>
 <div class="about_me_links"><a href="#work">//work</a><br/>
 <a href="me">//contact</a><br/>
 </div>
-
+</section>
  
   <div class="content">
+
   <section id="work">
+  
+
+  
+    <div class="container"> 
+      <div class="box-content">
+        <a href="work/stills">
+          <div class="box-content-overlay"></div>
+          <img class="image" src="content/work/stills.png" >
+          <div class="content-text">
+            <h1>3D stills</h1>
+          </div>
+        </a>
+      </div>
+    </div>
+
+
 
     <div class="container"> 
       <div class="box-content">
@@ -79,20 +125,7 @@
       </div>
     </div>
 
-  
 
-  
-    <div class="container"> 
-      <div class="box-content">
-        <a href="work/stills">
-          <div class="box-content-overlay"></div>
-          <img class="image" src="content/work/stills.png" >
-          <div class="content-text">
-            <h1>3D stills</h1>
-          </div>
-        </a>
-      </div>
-    </div>
 
 
     <div class="container"> 
@@ -107,11 +140,22 @@
       </div>
     </div>
 
+    <div class="container last">
+<div class="footer">
+<a href="mailto:jonas@litvinas.com?Subject=Hello%20from%20litvinas.com" target="_top">contact me</a> / <a href="http://instagram.com/litvinas"> instagram</a>
+<br/>
+&copy; 2018 and forever
+</div>
+
+    </div>
+</section>
+<br/>
+<br/>
+<img> <!-- this is an empty element so the footer is placed accordingly-->
+
   
-
-
-
+</div>
 <!-- end of content -->
-  </div>
+
 </body>
 </html>
