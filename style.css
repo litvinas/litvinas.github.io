@@ -148,7 +148,13 @@ body, html {
    -webkit-transition: opacity .25s ease-in-out;
 */
 }
-
+.image_still {
+  display: inline-block;
+  float: left;
+  width: 50vw;
+  height: auto;
+  padding-bottom: 10px;
+}
 .container {
   position: relative;
   float: left;
@@ -320,8 +326,8 @@ video::-webkit-media-controls {
 }
 .image.work {
   width: 46vw;
-
 }
+
 
 .about_me_links {
   position: absolute;
@@ -374,5 +380,4 @@ font-size: 1.2em;
     letter-spacing: 2px;
     font-weight: 200;
     background: rgba(255,255,255,0.2);
-
 }
